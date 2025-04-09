@@ -42,7 +42,9 @@ jobs:
       - working-directory: app/build
         shell: bash
         run: ls -R
-      
+
+     
+
       # - name: Archive Release
       #   uses: thedoctor0/zip-release@master
       #   with:
@@ -50,9 +52,9 @@ jobs:
       #     path: ${{ github.event.repository.name }}*
       #     filename: "${{ github.event.repository.name }}-${{ github.ref_name }}-${{ matrix.os }}.zip"
           
-      # - name: Release prebuilt
-      #   uses: ncipollo/release-action@v1
-      #   with:
-      #     artifacts: "${{ github.event.repository.name }}-${{ github.ref_name }}-${{ matrix.os }}.zip"
-      #     allowUpdates: true
-      #     token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Release prebuilt
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "app/build/libs/app.war"
+          allowUpdates: true
+          token: ${{ secrets.GITHUB_TOKEN }}
