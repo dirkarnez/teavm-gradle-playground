@@ -13,9 +13,12 @@ teavm-gradle-playground
 
 ### Samples
 - [teavm/samples at master · konsoletyper/teavm](https://github.com/konsoletyper/teavm/tree/master/samples)
+- https://github.com/heruoji/Katana/
+- https://github.com/konsoletyper/tnoodle-example
 
 
 ### Notes
 - gradle's configuration cache should be disabled
   - [Configuration cache](https://docs.gradle.org/8.13/userguide/configuration_cache.html#config_cache:usage)
   - [`gradle.properties`](./gradle.properties)
+- try `./gradlew :appRunWar`
