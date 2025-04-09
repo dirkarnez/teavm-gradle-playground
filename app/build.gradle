@@ -3,6 +3,7 @@ plugins {
     id "war"
     id "org.teavm" version "0.11.0"
 }
+
 repositories {
     mavenCentral()
 }
@@ -13,12 +14,12 @@ dependencies {
     implementation teavm.libs.jsoApis
 }
 
-// Apply a specific Java toolchain to ease working on different environments.
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
-}
+// // Apply a specific Java toolchain to ease working on different environments.
+// java {
+//     toolchain {
+//         languageVersion = JavaLanguageVersion.of(11)
+//     }
+// }
 
 teavm {
     all {
