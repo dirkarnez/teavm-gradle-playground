@@ -22,7 +22,7 @@ java {
 
 teavm {
     all {
-        mainClass = "example.MainClass"
+        mainClass = "org.example.MainClass"
     }
     js {
         addedToWebApp = true
