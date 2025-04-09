@@ -10,3 +10,6 @@ teavm-gradle-playground
 
 ### TeaVM Documentation
 - [TeaVM — Getting started](https://teavm.org/docs/intro/getting-started.html)
+
+### Samples
+- [teavm/samples at master · konsoletyper/teavm](https://github.com/konsoletyper/teavm/tree/master/samples)
